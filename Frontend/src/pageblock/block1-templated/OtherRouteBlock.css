@@ -1,0 +1,35 @@
+.other-route-react-block {
+  text-align: center;
+}
+
+.block1-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .block1-logo {
+    animation: block1-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes block1-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.other-route-react-block-header {
+  background-color: #e9da10;
+  min-height: 10vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1px + 2vmin);
+  color: rgb(231, 13, 13);
+}
+
+.block1-link {
+  color: #0c0d0e;
+}
+
