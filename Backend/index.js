@@ -3,7 +3,7 @@
 
 // DEPENDENCIES INCLUDE - graphql, mongoose, express, apollo-server-express (and be sure to remove apollo-server due to suggested conflict)
 // INSTRUCTION GIVEN HERE: https://www.apollographql.com/docs/apollo-server/integrations/middleware/#swapping-out-apollo-server
-// 1-RUN COMMAND: (optional) "npm uninstall apollo-server" and "npm install apollo-server-express graphql" 
+// 1-RUN COMMAND: (optional) "npm uninstall apollo-server" and "npm install graphql mongoose express apollo-server-express" 
 const { ApolloServer, gql } = require('apollo-server-express');
 
 // 2-APOLLO SETUP
