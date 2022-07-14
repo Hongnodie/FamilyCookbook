@@ -14,20 +14,63 @@
     <!-- manifest.json provides metadata used when your web app is installed on a user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/ -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
-    <title>Name of tab</title>
+    <title>Family CookBook</title>
     <!-- Prevent advertising warning from showing up: "__DEV__" issue solved by https://github.com/apollographql/apollo-client/issues/8674 -->
     <script> this['__DEV__'] = false </script>
   </head>
+
   <body>
-    <div class="text-center">
-      <p>Some Content</p>
-    </div>
-    <div class="typical-block">
-      <p>Reactive Component in index.html</p>
-      <div id="locator"></div>
-    </div>
-    <div class="text-center">
-      <p>Other content</p> 
-    </div>
+    <!-- Check structure here https://www.w3schools.com/html/html5_semantic_elements.asp -->
+    <header class="headerSelf-Flex">
+      <!-- Navbar is responsible for navigation -->
+      <Nav class="headerNav">
+        <a href="/" id="NavIconBtn">CookBook Menulist</a>
+        <!-- Add Nav bar -->
+          <!-- Pull out panel for page navigation -->
+      </Nav>
+
+      <div class="headerQuickSearch">
+        <!-- Search bar section for quick navigation -->
+        <div class="quickSearchBlock">
+          <input id="quickSearchBlockInput" type="text" placeholder="Anything you want to type">
+          <button id="headerQuickSearchBtn">Search</button>
+        </div>
+      </div>
+
+      <div class="headerNavagation">
+        <!-- Page Navigation -->
+        <button id="headerNaviBtn">Navi</button>
+      </div>
+
+      <div>
+        <!-- Add Login -->
+        <button class="logIOBtn" id="loginBtn">In</button>
+        <button class="logIOBtn" id="logoutBtn">Out</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="text-center">
+        <p>Short Title of content page</p>
+      </div>
+
+      <div class="typical-block">
+        <p>Html Component same level as react block</p>
+        <!-- The react element -->
+        <div id="locator"></div>
+      </div>
+
+      <div class="text-center">
+        <p>Brief Viewing the shopping cart</p> 
+      </div>
+    </main>
+
+    <footer>
+      <!-- Add copyright and github link -->
+      Some Links First <br>
+      Then Copyright to Hongnodie
+    </footer>
+
   </body>
+
 </html>

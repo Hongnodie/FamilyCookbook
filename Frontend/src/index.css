@@ -12,6 +12,100 @@ code {
     monospace;
 }
 
+/* Header Section */
+.headerSelf-Flex {
+  display: flex;
+  /* Vertical baseline centered */
+  align-items: center;
+  background-color: aquamarine;
+  border-bottom: solid rgb(4, 242, 250) 0.2rem;
+  height: 12vh;
+  position: sticky;
+}
+
+  /* NavBar */
+  .headerNav {
+    /* Capture 30% Width */
+    width: 30%;
+  }
+    /* Icon hyperlink Button */
+    #NavIconBtn {
+      cursor: pointer;
+      font-size: 2rem;
+      /* To ease the click use padding */
+      padding: 1.5em;
+      /* Remove underline by default */
+      text-decoration: none;
+      /* In case of short length screen */
+      display: flex;
+      flex-direction: column;
+    }
+
+    #NavIconBtn:hover {
+      font-weight: 600;
+    }
+  
+  /* Quick Search */
+  .headerQuickSearch {
+    width: 40%;
+  }
+    /* QuickSearchBlock */
+    .quickSearchBlock {
+      /* Placed at Center 40% of page */
+      height: 5vh;
+      background-color: white;
+      border-radius: 1rem;
+      /* Centered */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+      /* Input */
+      #quickSearchBlockInput {
+        /* Remove default */
+        border-width: 0px;
+        height: 80%;
+        width: 80%;
+        margin-left: 1em;
+        font-size: large;
+      }
+      #quickSearchBlockInput:focus-visible {
+        outline: 0;
+      }
+      /* Search Btn */
+      #headerQuickSearchBtn {
+        width: 20%;
+        border-radius: 0 1rem 1rem 0;
+        background-color: aliceblue;
+        border: 0;
+        height: 100%;
+        font-size: 1.2rem;
+      }
+
+  /* headerNavagation */
+  .headerNavagation {
+    width: 20%;
+    text-align: center;
+  }
+    /* headerNaviBtn */
+    #headerNaviBtn {
+      border: 0;
+      background-color: transparent;
+    }
+
+    /* Login/Out Button */
+    .logIOBtn {
+      /* Let height = width to make a circle */
+      height: 3rem;
+      width: 3rem;
+      background-color: rgb(4, 242, 250);
+      /* Sdandard circle radius */
+      border-radius: 50%;
+      font-size: large;
+      margin: 0.1em;
+    }
+
+/* Main Section */
 .typical-block {
   /* Text center */
   text-align: center;
@@ -29,4 +123,18 @@ code {
 p {
   margin: 0 auto;
   text-align: center
+}
+
+button:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+button:active {
+  color: red;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: dodgerblue;
 }
