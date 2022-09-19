@@ -23,6 +23,25 @@ code {
   position: sticky;
 }
 
+@media screen and (max-width: 500px) {
+  .headerSelf-Flex {
+    flex-direction: column;
+    /* Reset the height constraint */
+    height: auto;
+  }
+    .headerNav {
+      display: block;
+      align-self: flex-start;
+    }
+    .headerLogs {
+      position: absolute;
+      top: 1rem;  right: 1rem;
+    }
+    .headerQuickSearch {
+      min-width: 80vw;
+    }
+}
+
   /* NavBar */
   .headerNav {
     /* Capture 30% Width */
@@ -39,6 +58,7 @@ code {
       /* In case of short length screen */
       display: flex;
       flex-direction: column;
+      letter-spacing:.2rem;
     }
 
     #NavIconBtn:hover {
