@@ -129,7 +129,7 @@ code {
 .typical-block {
   /* Text center */
   text-align: center;
-  width: 30vw;
+  width: 80vw;
   border: .2em solid;
   padding: .5em;
   /* Block center */
@@ -140,10 +140,10 @@ code {
   border: .1em solid;
 }
 
-p {
+/* p {
   margin: 0 auto;
   text-align: center
-}
+} */
 
 button:hover {
   font-weight: 600;
