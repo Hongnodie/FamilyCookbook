@@ -67,12 +67,12 @@ const userModel = mongoose.model('User', userSchema);
 // After this, mongoDB is operatable by calling for "userModel"(self-named)
 
 // 2.2.3-SEND LOCAL MODEL TO THE CLOUD DATABASE SERVER AND STAY CONNECTED
-// Example by mongoose official guidebook at https://mongoosejs.com/docs/migrating_to_6.html#no-more-deprecation-warning-options
+// Example by mongoose official guidebook at https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/
 // Name database(db)  as "apollo-template"
 mongoose
-    .connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/apollo-template', {
+    .connect(process.env.MONGODB_URI || 'mongodb+srv://userExample:passwordExample@cluster0.xmxpa.mongodb.net/FamilyCookBook?retryWrites=true&w=majority', {
         useNewUrlParser: true,
-        useUnifiedTopology: true,
+        useUnifiedTopology: true
     })
     // 2.2.4-SEED THE CLOUD DATABASE
     // Terminology "seed" means put data (requires to be json object) to the place where you try to find it
